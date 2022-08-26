@@ -1,4 +1,4 @@
-<p align="center"><a href="https://makariosvar.site" target="_blank"><img src="https://developers.google.com/youtube/v3/libraries?hl=pt-br" width="400"></a></p>
+<p align="center"><a href="https://makariosvar.site" target="_blank"><img src="https://www.codeproject.com/KB/android/888694/youtube.png" width="400"></a></p>
 <h1 align="center"> Which video has more views?</h1>
 <p align="center">
 	Choicing game using:
