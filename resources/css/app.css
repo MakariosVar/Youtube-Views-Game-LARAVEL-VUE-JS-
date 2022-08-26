@@ -1,0 +1,306 @@
+
+/* Split the screen in half */
+.split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+ 
+        
+}
+      
+      /* Control the left side */
+.left {
+        left: 0;
+        background: linear-gradient(0.75turn,#ff0000, #5a5b61);
+}
+      
+      /* Control the right side */
+.right {
+        right: 0;
+        background: linear-gradient(0.75turn,#5a5b61,#ff0000);
+}
+.centered {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 1%;
+        height: 75%;
+        border-radius: 10%;
+        width: auto;
+        min-width: 200px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border:  dashed #020202;
+
+        
+}
+.centered:hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: green;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+.GameOver{
+        color:red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        background-color: rgba(52, 55, 70, 0.95) 
+}
+
+
+.svgYtb{
+  max-width: 40%;
+  height: auto;
+}
+h1,h2,h3,h4,p{font-family: 'DynaPuff', cursive; font-size:3vmin;}
+.mediaScreenIMG{
+  width: 100%;
+  max-width: 500;
+  height: auto;
+}
+.versusalign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For mobile phones: */
+  .centered{
+    max-height: 65%;
+  }
+  .VSsvg {
+    max-width: 85%;
+  }
+  
+  
+  .responseHide{
+    display: none;
+  }
+
+}
+/* START BUTTON CSS */
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #000000;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}
+
+  @keyframes color {
+  0%   { background: #d40606bb; }
+  20%  { background: #990505; }
+  40%  { background: #aa4242; }
+  60%  { background: #eba7a7; }
+  80%  { background: #a81b1b; }
+  100% { background: #d40606bb; }
+}
+#StartGame{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #d40606bb; /* Fallback */
+  animation: color 9s infinite linear;
+  padding: 2em;
+}
+
+.NextPhase{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        background-color: rgba(4, 197, 30, 0.950); 
+}
+.nextBtn{
+        background-color: rgb(21, 126, 37);
+        box-shadow: 0 5px 0 rgb(123, 122, 41);
+        color: white;
+        padding: 1em 1.5em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      
+      .nextBtn:hover {
+        background-color: #12977a;
+      }
+      
+      .nextBtn:active {
+        box-shadow: none;
+        top: 5px;
+      }
+      
+.restartBtn{
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.restartBtn:hover {
+  background-color: #ce0606;
+}
+
+.restartBtn:active {
+  box-shadow: none;
+  top: 5px;
+}
+#header{
+        position: fixed;
+        z-index: 2;
+        left: 50%;
+        top: 20px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+}
+#generateNew{
+        position: fixed;
+        z-index: 2;
+        left: 50%;
+        bottom: -100px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+}
+#moreInfo{
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        
+}
+
+      .show-grid {
+        padding: 10px;
+      }
+      
+      .show-grid .row {
+        margin-bottom: 15px;
+      }
+      
+      .show-grid [class^=col-] {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background-color: #eee;
+          background-color: rgba(86,61,124,.15);
+          border: 1px solid #ddd;
+          border: 1px solid rgba(86,61,124,.2);
+      }
+      #versus {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+/* Dropdown Button */
+.dropbtn {
+        background-color: #363a38;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {background-color: #255f8c;}
